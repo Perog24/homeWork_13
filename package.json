@@ -1,0 +1,19 @@
+{
+  "name": "lesson_12",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "none",
+    "start": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "/Perog24/lesson_12"
+  },
+  "author": "Perizhok A",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
