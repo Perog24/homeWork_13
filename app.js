@@ -1,7 +1,7 @@
 const express = require('express');
-// const prodactsList = require('./goodsList');
 const validation = require('./middelware/validation');
-const router = require('./controllers/routes/prodactsRouter');
+const router = require('./routes/prodactsRouter');
+const bodyParser = require('body-parser');
 
 const server = express();
 const PORT = 4300;
@@ -9,6 +9,7 @@ const PORT = 4300;
 server.listen(PORT, () => {
    console.log("Server started on port: " + PORT);
 });
+server.use(bodyParser.json());
 server.use(validation);
 server.use(router);
 
